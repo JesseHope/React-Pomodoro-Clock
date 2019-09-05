@@ -1,0 +1,63 @@
+#main-container {
+	background-image: url(https://designshack.net/wp-content/uploads/background-textures.png);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	font-weight: 600;
+  }
+  
+  #main-title {
+	font-size: 40px;
+	text-align: center;
+  }
+  
+  #clock-container {
+	margin: auto;
+	height: 300px;
+	width: 500px;
+	background: rgba(255, 0, 85, 0.1);
+	border: 10px solid #4d004d;
+	color: #4d004d;
+	box-shadow: 0px 0px 40px 10px #4d004d;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-colums: 1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	  "r1c1 r1c1 r1c1 r1c1 r1c1 r1c1 r1c1 r1c1 "
+	  "r2c1 r2c1 r2c2 r2c2 r2c2 r2c2 r2c3 r2c3"
+	  "r3c1 r3c2 r3c3 r3c4 r3c4 r3c6 r3c7 r3c8"
+	  "r5c1 r5c2 r5c3 r5c4 r5c5 r5c6 r5c7 r5c8"
+	  "r6c1 r6c2 r6c3 r6c4 r6c5 r6c6 r6c7 r6c8";
+  }
+  
+  .icon {
+	font-size: 24px;
+  }
+  
+  .icon:hover {
+	color: red;
+  }
+  
+  .big-text {
+	font-size: 30px;
+  }
+  
+  .med-text {
+	font-size: 24px;
+  }
+  
+  #main-title {grid-area:r1c1;}
+  #timer-label {grid-area:r2c2;}
+  #start_stop {grid-area:r3c3; position: relative; bottom: 20px;}
+  #time-left {grid-area:r3c4; position: relative; bottom: 20px;}
+  #reset {grid-area:r3c6; position: relative; bottom: 20px;}
+  #break-label {grid-area:r5c7;}
+  #break-decrement {grid-area:r6c6; position: relative; left: 55px; bottom: 30px;}
+  #break-length {grid-area:r6c7; position: relative; bottom: 30px;}
+  #break-increment {grid-area:r6c8; position: relative; right: 50px; bottom: 29px;}
+  #session-label {grid-area:r5c2;}
+  #session-decrement {grid-area:r6c1; position: relative; left: 50px; bottom: 30px;}
+  #session-length {grid-area:r6c2; position: relative; bottom: 30px;}
+  #session-increment {grid-area:r6c3; position: relative; right: 58px; bottom: 30px;}
